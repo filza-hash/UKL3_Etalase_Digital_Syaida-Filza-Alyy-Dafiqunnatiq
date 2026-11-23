@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* ---------- Kartu project (tampilan etalase_stella) ---------- */
+.project-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Logo Telkom Schools samar sebagai latar dashboard */
+body.dashboard-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('../img/logo.png') no-repeat center center;
+    background-size: min(60vw, 560px);
+    opacity: 0.07;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Angka reaksi / ulasan / rating di kartu */
+.card-stat {
+    display: flex;
+    gap: 14px;
+    font-size: 0.82rem;
+    color: #6c757d;
+    margin-top: 6px;
+}
+.card-stat .bi { color: #800000; }

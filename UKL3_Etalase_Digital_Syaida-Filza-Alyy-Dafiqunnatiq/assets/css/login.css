@@ -1,0 +1,52 @@
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* ---------- Akun uji (bisa dibuka/ditutup) ---------- */
+.akun-uji {
+    background: #f6e9e9;
+    border: 1px dashed #800000;
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-align: center;
+}
+.akun-uji-judul {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #800000;
+    font-size: 0.95rem;
+    user-select: none;
+}
+.akun-uji-judul::-webkit-details-marker { display: none; }
+.akun-uji-judul::before { content: "\25B6  "; font-size: 0.7rem; }
+.akun-uji[open] .akun-uji-judul::before { content: "\25BC  "; }
+.akun-uji-isi { margin-top: 10px; }
+.akun-uji-item {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 6px;
+    padding: 5px 8px;
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+.akun-uji-item:hover { background: #ffffff; color: #800000; }
+.akun-uji-role  { display: block; font-size: 0.7rem; font-weight: 600; color: #800000; text-transform: uppercase; letter-spacing: 0.5px; }
+.akun-uji-email { display: block; word-break: break-all; }
+.akun-uji-pass  { font-size: 0.85rem; color: #6c757d; margin-top: 8px; }
+.akun-uji-pass code { color: #800000; }
